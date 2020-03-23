@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-   
-    <script src="chromath.min.js"></script>
-    <script src="onepixel.js"></script>
-    <script src="mqttws31.js"></script>
-    <script src="farveskift_mqtt2020.js"></script>
-    <script src="orientation.js"></script>
-    <script src="toggleDisplayKey.js"></script>
+<html lang="en">
 
-    <link rel="stylesheet" type="text/css" href="big.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./rgb-color-picker.css">
 </head>
-<body><div id="indhold">
-    <h1>Orientation over MQTT</h1>
-    <h1 id="startklik" onclick="startOrientation()">CLICK TO START</h1>
-    <i>Press spacebar to toggle display.</i><hr>
-    MQTT Status: <b><span id= "visConnect">Not connected</span></b><br>
-    Alpha local: <b><spanSpan: id= "visOrientering">?</span></b><br>
-    Alpha MQTT: <span: id= "visMQTT">?</span>
-</div>
+
+<body>
+
+    <div style="background: red" class="rgb" id="red">red</div>
+    <div style="background: green" class="rgb" id="green">green</div>
+    <div style="background: blue" class="rgb" id="blue">blue</div>
+    <div class="circle"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"></script>
+    <script src="./rgb-mqtt.js"></script>
+    <script src="./permission.js"></script>
+    <script src="./rgb-color-picker.js"></script>
+
 </body>
 
-
-
-
 </html>
-
